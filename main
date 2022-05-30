@@ -1,0 +1,14 @@
+package com.codewars.julesnuggy;
+import java.util.*;
+public class BingoOrNot {
+    public static String bingo(int[] numberArray){
+      ArrayList<Integer> newArray = new ArrayList<>();
+      for(int i=0; i<=numberArray.length-1; i++){
+          newArray.add(numberArray[i]);
+      }
+       if(newArray.contains(2) && newArray.contains(9) && newArray.contains(14) && newArray.contains(7) && newArray.contains(15)){
+        return "WIN";
+    }
+        return "LOSE";
+      }
+}
